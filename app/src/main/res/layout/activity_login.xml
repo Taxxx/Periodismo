@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo1"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/ly_login1">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/ly_logo_login">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    >
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"
+            android:id="@+id/img_logo_login" />
+
+</FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/translucent_black"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/ly_datoslogin">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2"
+            android:fillViewport="false">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@+id/ly_datoslogin2">
+
+
+        <TextView
+            android:id="@+id/lbl_inicio_sesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:text="@string/iniciar_sesion"
+            android:textColor="@color/blanco"
+            android:textSize="20sp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/lbl_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usuario"
+            android:textColor="@color/blanco"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/txt_usuario"
+            android:layout_width="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_text_fondo"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/plomo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/lbl_contrasenhia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contrasenhia"
+            android:textColor="@color/blanco"
+            android:textSize="20sp"
+            />
+
+
+
+        <EditText
+            android:id="@+id/txt_contrasenhia"
+            android:layout_width="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/plomo"
+            android:background="@drawable/edit_text_fondo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+        </EditText>
+
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/blanco"
+            android:background="@drawable/boton_login1"
+            android:text="@string/login" />
+
+
+
+        <Button
+            android:id="@+id/btn_he_olvidado_conrtasenhia"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/blanco"
+            android:background="@drawable/boton_login2"
+            android:text="@string/recuperar_contrasenhia" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ly_fondo_tarea_pendiente"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/blanco"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:id="@+id/ly_detalle_visita_medica">
+
+            <TextView
+                android:id="@+id/lbl_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="Titulo"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/lbl_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginBottom="5dp"
+                android:text="Tags"
+                />
+
+
+            <TextView
+                android:id="@+id/lbl_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Fecha"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:color/white" />
+
+</LinearLayout>
+

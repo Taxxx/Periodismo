@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Periodismo</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre">Nombre</string>
+    <string name="altas">Altas</string>
+    <string name="bajas">Bajas</string>
+    <string name="modificaciones">Modificaciones</string>
+    <string name="enviando_datos">Enviando datos</string>
+    <string name="title_activity_login">Login</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="datos_correctos">Datos correctos</string>
+    <string name="necesita_conexion">Necesita conexión</string>
+
+    <!-- LOGIN -->
+    <string name="login">Loguearme</string>
+    <string name="titulo_login">Login</string>
+    <string name="usuario">Usuario</string>
+    <string name="recuperar_contrasenhia">Recuperar contraseña</string>
+    <string name="contrasenhia">Contraseña</string>
+    <string name="debe_ingresar_un_mail_valido">Ingrese un email válido</string>
+    <string name="datos_incorrectos">Datos Incorrectos</string>
+    <string name="iniciar_sesion">Inicio de Sesión</string>
+
+    <!-- LISTADO DE NOTICIAS -->
+
+    <string name="titulo_noticia">Titulo:</string>
+    <string name="tags">Tags:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="buscador">Buscador</string>
+    <string name="title_activity_noticia">Noticia</string>
+
+    <!-- NOTICIAS -->
+
+    <string name="img">IMG</string>
+    <string name="video">VIDEO</string>
+    <string name="audio">AUDIO</string>
+    <string name="galeria">GALERIA</string>
+    <string name="hablar">Hablar</string>
+    <string name="guardar">Guardar</string>
+    <string name="titulo">Título:</string>
+    <string name="seccion">Sección:</string>
+    <string name="descripcion">Descripción:</string>
+
+
+
+    <!--MENU PRINCIPAL-->
+
+    <string name="nuevo_reporte">NUEVO REPORTE</string>
+    <string name="ver_reportes">VER REPORTES</string>
+    <string name="sinc">SYNC</string>
+    <string name="help">HELP</string>
+
+</resources>
