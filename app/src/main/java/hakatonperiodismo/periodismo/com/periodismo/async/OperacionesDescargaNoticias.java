@@ -10,9 +10,12 @@ import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpParams;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -65,13 +68,10 @@ public class OperacionesDescargaNoticias extends AsyncTask<String, String, Strin
 		try
 		{
 			DefaultHttpClient httpClient =new DefaultHttpClient();
-			HttpPost httpPost= new HttpPost(link);		
+			HttpGet httpPost= new HttpGet(link);
 			String json="Authorization: JWT "+token+" http://chaskireport.herokuapp.com/api/reportaje";
 			 System.out.println("************ "+json.toString());
-
-			StringEntity stringEntity=  new StringEntity(json, "UTF-8");
-			httpPost.setEntity(stringEntity);
-			httpPost.setHeader("Content-type","application/json;");
+			httpPost.setHeader("Authorization","JWT "+token);
 			HttpResponse httpResponse= httpClient.execute(httpPost);		
 			HttpEntity httpEntity=httpResponse.getEntity();
 			resultado=convertStreamToString(httpEntity.getContent());
@@ -80,15 +80,15 @@ public class OperacionesDescargaNoticias extends AsyncTask<String, String, Strin
 
 
 
-
 		}
-		catch (NullPointerException e) 
+      /*  catch (JSONException e)
+        {
+            System.out.
+            servidor="problemas_de_conexion";
+        }*/
+        catch (NullPointerException e)
 		{
 			servidor="problemas_de_conexion";
-		} catch (JSONException e) {
-			Log.e("log_tag", "Error parsing data "+e.toString());
-			servidor="problemas_de_conexion";
-			e.printStackTrace();
 		} catch (Exception e) {
 			servidor="problemas_de_conexion";
 			e.printStackTrace();
