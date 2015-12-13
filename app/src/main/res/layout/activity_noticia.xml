@@ -110,6 +110,16 @@
             android:id="@+id/btn_galeria"
             android:layout_gravity="center_vertical"  />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_custom"
+            android:textColor="@color/blanco"
+            android:text="@string/voz"
+            android:id="@+id/btn_voz"
+            android:layout_gravity="center_vertical"  />
+
     </LinearLayout>
 
 

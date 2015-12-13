@@ -44,6 +44,9 @@ public class Noticia extends Activity {
     private Calendar fechaYhora = Calendar.getInstance();
     SimpleDateFormat fecha = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     String fecha_actual;
+/////////////////////////////////VOZ
+    Button btn_voz;
+
 
 
     /*
@@ -137,7 +140,19 @@ SECCION VIDEO
             }
         });
 
+        btn_voz=(Button)this.findViewById(R.id.btn_voz);
+        btn_voz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Noticia.this,Voz.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
+
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

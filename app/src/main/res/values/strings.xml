@@ -42,7 +42,7 @@
     <string name="titulo">Título:</string>
     <string name="seccion">Sección:</string>
     <string name="descripcion">Descripción:</string>
-
+    <string name="voz">VOZ</string>
 
 
     <!--MENU PRINCIPAL-->
@@ -51,5 +51,7 @@
     <string name="ver_reportes">VER REPORTES</string>
     <string name="sinc">SYNC</string>
     <string name="help">HELP</string>
+    <string name="title_activity_voz">Voz</string>
+
 
 </resources>
