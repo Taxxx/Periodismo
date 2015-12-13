@@ -36,9 +36,7 @@
         <activity android:name=".app.ListadoNoticias"></activity>
         <activity android:name=".app.Noticia"></activity>
         <activity android:name=".app.Login"></activity>
-        <activity
-            android:name=".app.Voz"
-            android:label="@string/title_activity_voz"></activity>
+        <activity android:name=".app.Voz"></activity>
     </application>
 
 </manifest>
